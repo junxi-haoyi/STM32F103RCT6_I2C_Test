@@ -1,0 +1,5 @@
+#include "stm32f10x.h"
+#include "I2C.h"
+#include "delay.h"
+#include "usart.h"
+#include "DHT11.h"

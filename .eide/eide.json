@@ -1,0 +1,262 @@
+{
+  "name": "I2C_Test",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "API",
+        "files": [
+          {
+            "path": "API/delay.c"
+          },
+          {
+            "path": "API/DHT11.c"
+          },
+          {
+            "path": "API/font.h"
+          },
+          {
+            "path": "API/I2C.c"
+          },
+          {
+            "path": "API/usart.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "SRC",
+        "files": [
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/misc.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c"
+          },
+          {
+            "path": "libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "STARTUP",
+        "files": [
+          {
+            "path": "libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/arm/startup_stm32f10x_hd.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "USER/includes.h"
+          },
+          {
+            "path": "USER/main.c"
+          },
+          {
+            "path": "USER/stm32f10x_conf.h"
+          },
+          {
+            "path": "USER/stm32f10x_it.c"
+          },
+          {
+            "path": "USER/stm32f10x_it.h"
+          },
+          {
+            "path": "USER/stm32f10x.h"
+          },
+          {
+            "path": "USER/system_stm32f10x.c"
+          },
+          {
+            "path": "USER/system_stm32f10x.h"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "STM32F101RC",
+  "packDir": ".pack/Keil/STM32F1xx_DFP.2.3.0",
+  "miscInfo": {
+    "uid": "58d8e762e579c1c16f6b4f8a9d10e8f2"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "STLink",
+      "uploadConfig": {
+        "bin": "",
+        "proType": "SWD",
+        "resetMode": "default",
+        "runAfterProgram": true,
+        "speed": 4000,
+        "address": "0x08000000",
+        "elFile": "None",
+        "optionBytes": ".eide/debug.st.option.bytes.ini",
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x08000000",
+          "elFile": "None",
+          "optionBytes": ".eide/debug.st.option.bytes.ini",
+          "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32f1x",
+          "interface": "stlink",
+          "baseAddr": "0x08000000"
+        },
+        "pyOCD": {
+          "bin": "",
+          "targetName": "cortex_m",
+          "baseAddr": "0x08000000",
+          "speed": "4M",
+          "config": ".eide/debug.pyocd.yaml"
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".eide/deps",
+          "API",
+          "USER",
+          "libraries/CMSIS/CM3/CoreSupport",
+          "libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/arm",
+          "libraries/STM32F10x_StdPeriph_Driver/inc",
+          "libraries/STM32F10x_StdPeriph_Driver/src"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "STM32F10X_HD"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
